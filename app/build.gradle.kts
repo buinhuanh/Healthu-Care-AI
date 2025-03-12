@@ -43,6 +43,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
     implementation ("com.github.ismaeldivita:chip-navigation-bar:1.4.0")
     implementation ("androidx.core:core-ktx:1.15.0")
     implementation ("com.google.android.material:material:1.9.0")
@@ -51,6 +52,9 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
     implementation("com.google.code.gson:gson:2.9.1")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
+    implementation ("com.airbnb.android:lottie:3.4.0")
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    implementation ("com.intuit.ssp:ssp-android:1.1.1")
 
 
 }

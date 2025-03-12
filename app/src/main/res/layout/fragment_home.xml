@@ -3,12 +3,358 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_25sdp"
+                        android:textColor="@color/color_text_name_home"
+                        android:text="Hi,Hanh" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5142AB"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="normal"
+                        android:text="Wednesday,29 Dec" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_100sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    tools:src="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:background="@drawable/bg_home_heart"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_180sdp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="@dimen/_41sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Heart" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_home_heart" />
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/animation2"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+
+                    <TextView
+                        android:id="@+id/txtNumberHeart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="105" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtNumberHeart"
+                        android:text="bmp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/bg_home_water"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_180sdp">
+
+                    <TextView
+
+                        android:layout_width="@dimen/_41sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/color_home_text_purple"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Water" />
+
+                    <ImageView
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_home_water" />
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/animation3"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+
+                    <TextView
+                        android:id="@+id/txtNumberHeart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_purple"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="105" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_purple_light"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtNumberHeart2"
+                        android:text="bmp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:background="@drawable/bg_home_water"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="@dimen/_125sdp">
+
+                        <TextView
+                            android:layout_width="@dimen/_41sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/color_home_text_purple"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Walk" />
+
+                        <ImageView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:src="@drawable/ic_home_walk" />
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="@dimen/_38sdp"
+                            android:src="@drawable/img_home_walk" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:background="@drawable/bg_home_water"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="@dimen/_80sdp">
+
+                        <TextView
+                            android:layout_width="@dimen/_41sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/color_home_text_purple"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Sleep" />
+
+                        <ImageView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:src="@drawable/ic_home_bed" />
+
+
+
+                        <TextView
+                            android:id="@+id/txtHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_purple"
+                            android:textSize="@dimen/_15sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:text="06:32" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/txtHour"
+                            android:text="hour" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/bg_home_water"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_225sdp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/color_home_text_purple"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Calories" />
+
+                    <ImageView
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_home_calories" />
+
+
+
+                    <TextView
+                        android:id="@+id/txtNumberCalo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_purple"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="105" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_purple_light"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtNumberCalo"
+                        android:text="bmp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

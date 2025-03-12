@@ -20,6 +20,7 @@
         android:id="@+id/plus"
         android:title=""
         android:icon="@drawable/ic_bottom_plus"
+        android:visible="false"
         android:iconTint="#AF2D2D"
         >
 

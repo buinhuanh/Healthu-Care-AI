@@ -7,12 +7,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.healthycareai.Fragment.AnotherFragment;
 import com.example.healthycareai.Fragment.HomeFragment;
+import com.example.healthycareai.Fragment.MapFragment;
+import com.example.healthycareai.Fragment.SettingFragment;
 import com.example.healthycareai.R;
 import com.example.healthycareai.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {
      ActivityMainBinding binding;
@@ -29,21 +33,30 @@ public class MainActivity extends AppCompatActivity {
 
     private void initListFrament() {
         getSupportFragmentManager().beginTransaction()
-                .replace(binding.viewFragment.getId(), new HomeFragment())
+                .replace(R.id.viewFragment,new HomeFragment())
                 .commit();
-        BottomNavigationView menu = findViewById(R.id.menu);
-        menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
+        binding.menu.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment=null;
-                switch (item.getItemId()){
-                    case R.id.home:
-                        fragment = new HomeFragment();
-                        break;
+            public void onItemSelected(int mI) {
+                Fragment mFragment = null;
 
+                if (mI == R.id.home) {
+                    mFragment = new HomeFragment();
+                } else if (mI == R.id.search) {
+                    mFragment = new AnotherFragment();
+                } else if (mI == R.id.bell) {
+                    mFragment = new MapFragment();
+                } else if (mI == R.id.user) {
+                    mFragment = new SettingFragment();
                 }
-                return false;
+
+                if (mFragment != null) {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.viewFragment, mFragment)
+                            .commit();
+                }
             }
+
         });
 
     }
