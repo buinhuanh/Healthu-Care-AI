@@ -242,6 +242,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cst_sleep"
                         android:background="@drawable/bg_home_water"
                         android:layout_marginTop="@dimen/_20sdp"
                         android:layout_width="@dimen/_130sdp"
