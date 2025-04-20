@@ -55,6 +55,9 @@ dependencies {
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
     implementation ("com.intuit.ssp:ssp-android:1.1.1")
+    implementation ("com.google.code.gson:gson:2.10.1")
+
+
 
 
 }

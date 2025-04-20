@@ -51,6 +51,8 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/itemAlarmClock"
+                android:background="@drawable/bg_item_sleep"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:gravity="center"

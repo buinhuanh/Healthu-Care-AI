@@ -1,5 +1,6 @@
 package com.example.healthycareai.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +20,11 @@ public class SleepActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivitySleepBinding.inflate(getLayoutInflater());
      setContentView(binding.getRoot());
+
+     binding.itemAlarmClock.setOnClickListener(view -> {
+         Intent intent = new Intent(SleepActivity.this, ShowAlarmActivity.class);
+         startActivity(intent);
+     });
 
 
     }

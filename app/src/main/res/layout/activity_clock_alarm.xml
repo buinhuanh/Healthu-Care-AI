@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ClockAlarmActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+        <LinearLayout
+            android:id="@+id/layoutRepeatDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleSun"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="S"
+                android:layout_weight="1"
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleMon"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="M"
+                android:layout_weight="1"
+
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleTue"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="T"
+                android:layout_weight="1"
+
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleWed"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="W"
+                android:layout_weight="1"
+
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleThu"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="T"
+                app:cornerRadius="20dp"
+                android:layout_weight="1"
+
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleFri"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="F"
+                android:layout_weight="1"
+
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+                android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleSat"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="S"
+                android:layout_weight="1"
+
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/white"
+               android:checkable="true"
+                app:checkedIcon="@null"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSetAlarm"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài báo thức"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

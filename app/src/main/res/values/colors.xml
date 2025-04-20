@@ -6,4 +6,5 @@
     <color name="color_home_text_purple">#53668E</color>
     <color name="color_purple">#5142AB</color>
     <color name="color_purple_light">#A274CD</color>
+    <color name="gray">#A274CD</color>
 </resources>
